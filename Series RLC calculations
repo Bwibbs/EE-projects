@@ -1,0 +1,58 @@
+Example of RLC series circuit with Natural response:
+
+Find:
+Vc(0+)
+dvc(0+)dt
+Vc()
+
+0
+
+First evaluate the initial voltage on the cap.  Since the voltage in the cap cannot change immediately then the voltage when the switch is closed is the same as when the switch is open.  So we get:
+
+Vc(0-)=Vc(0+)
+
+With the switch closed the cap acts as an open and the inductor acts as a short.  This get us:
+
+
+
+Apply voltage divider equation:
+
+Vc=-(4080+40)9=-3V  Since cap is acting as an open their will be no current through the 20 ohm resistor.  Voltage across the cap would be the same as the voltage across the 40 ohm resistor.
+
+Evaluate dvc(0+)dt
+
+            Use expression ic(0+)=Cdvc(0+)dt.  The cap is in series with the inductor.  Inductor will resist immediate changes in the current.  So:
+il(0-)=il(0+)
+
+Since the cap acts as an open,  atil(0-) the current would be 0A.  So we get:
+0A=Cdvc(0+)dt
+dvc(0+)dt=0V/s
+
+Evaluate Vc()
+
+At t=0, when the switch is open, the 9v source and 80 ohms resistor become disconnected from the circuit.  The 40 ohm resistor, 20 ohm resistor, inductor and capacitor become a source free series RLC.  As time goes to infinity the currents and voltage go to 0.
+
+Evaluate  and 0
+=R2L=Req2L=40+202(3)=606=10 rad/s
+0=1LC=13*3=19=13=.333 rad/s
+
+We have an overdamped response.  So we get:
+Vc(t)=A1es1t+A2es2t
+s1,2=-2-02=-10102-.3332=-10100-.111=-1099.889
+=-109.99=-.01and -19.99
+
+Evaluate the constants A1 and A2:
+Vc(0+)=A1+A2=-3V->  A1=-A2-3
+dvc(0+)dt=A1s1+A2s2=0 - >-.01A1+-19.99A2=0
+
+A1=-A2-3
+-.01A1+-19.99A2=0
+-.01(-A2-3)+-19.99A2=0
+.01A2+.03-19.99A2=0
+-19.98A2+.03=0
+-19.98A2=-.03
+A2=.0015
+
+A1=-A2-3=-.0015-3=-3.0015
+
+Vc(t)=A1es1t+A2es2t=-3.0015e-.01t+-3.0015e-19.99t
