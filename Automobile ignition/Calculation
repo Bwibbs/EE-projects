@@ -1,0 +1,57 @@
+Series circuit
+V=12V
+R=4 ohms
+C=1uF
+L=8mH
+
+Vc(0+)=Vc(0-)=0v
+Ic(0-)=124=3A
+
+Once we close the switch then:
+Vc(0+)=0v
+Ic(0+)=3A
+
+-12v+4i(0+)+vL(0+)+vC(0+)=0
+-12+(4*3)+vL(0+)=0
+vL(0+)=0
+
+di(0+)dt=vL(0+)=0
+
+i=0A
+
+=R2L=42*.008=4.016=250
+0=1LC=1.008*.000001=1.000000008=1.000089=11236
+
+We have an underdamped case.
+v(t)=e-t(A1cosdt+A2sindt)
+d=02-2=112362-2502=126247696-62500=126185196=11233
+v(t)=e-t(A1cosdt+A2sindt)
+
+The transient response is:
+Is(t)=e-(A1cosdt+A2sindt)
+Iss(t)=i()=0A
+
+Complete response is:
+i(t)=it(t)+iss(t)=e-250(A1cos(11233)t+A2sin(11233)t)
+
+If we set t=0 we get
+
+i(0)=3=A1+0
+3=A1+0
+A1=3
+
+0=-250A1+11233A2=-250*3+11233A2=-750+11233A2
+750=11233A2
+A2=.067
+
+i(t)=e-250t(3cos(11233)t+.067sin(11233)t)
+
+
+Voltage across the inductor is:
+VL(t)=Ldidt=-268e-250tsin11233t
+
+11233t0=2=1.57
+11233t0=1.57
+t0=.00014s or 140s
+
+VL(t0)=-268e-250*.00014=-259v
