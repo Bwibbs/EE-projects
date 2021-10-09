@@ -1,0 +1,2 @@
+This a simple lab where I have two circuits, both with a 30V supply, 1k ohms resistor in series with a diode.  The difference between the circuit is the diodes orientation.
+In one circuit the diode is in forward bias position and in the other the diode is in reverse diode position.  In this file I will include calculations and video of the simulations.
