@@ -1,0 +1,3 @@
+The following is my simulation for a 120VAC to 5VDC power supply.  Calculations will be coming.  But first this is a standard power supply.  The transformer steps down the voltage
+from 120VAC to 12VAC.  From their the full-wave bridge rectifier converts the 12VAC to 12VDC with a small amount of AC signal, also known as ripple.  The capacitors that are in
+parallel with the full-wave bridge rectifier filter out that ripple so that we get a purely DC signal.  From there U1 takes the 12VDC input and steps it down to 5VDC output.
