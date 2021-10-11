@@ -1,0 +1,17 @@
+Max current through this zener diode is:
+Imax=watts/voltage=.2W/2.2V=90mA
+
+Min value of series resistor Rs is:
+Rs=Vs-VzImax=15-2.2/.09=12.8/.09=142.22
+
+The load current ILwhen we have a 1k ohms load resistor:
+IL=VzRL=2.2/1000=2.2mA
+
+Zener diode current Iz at full load:
+Iz=Imax-IL=.09-.0022=87.8mA
+
+Observation from this experiment:
+
+In line regulation the load resistance was constant.  The only thing that was the input voltage.   As we can see in the table above, if we increase the load resistance, then the voltage across the diode increases. 
+
+In load regulation the input voltage is constant and we only change the load resistance.  As we can see in the table above, if we increase the voltage input then the voltage across the diode increases.
