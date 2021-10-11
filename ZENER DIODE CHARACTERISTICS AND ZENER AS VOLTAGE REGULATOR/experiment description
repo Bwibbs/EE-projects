@@ -1,0 +1,2 @@
+In this experiment I built a simple voltage regulator circuit that uses a Zener diode.  
+We can use a zener diode as a voltage regulator if we have a current limiting resistor in series with the input voltage and the zener diode in parallel with a load resistor.
